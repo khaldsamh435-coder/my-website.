@@ -1,364 +1,274 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!doctype html>
+<html lang="ar" dir="rtl"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260925-05-46ec85d","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js" integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خالد سامح | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --void: #0f0f0f;
+      --panel: #151b18;
+      --panel-deep: #101512;
+      --neon: #00ff88;
+      --white: #f6fff9;
+      --muted: #b8c5bd;
+    }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    * { box-sizing: border-box; }
 
-    <title>خالد سامح | Web Developer</title>
+    html { scroll-behavior: smooth; }
 
-    <style>
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      color: var(--white);
+      font-family: "DM Sans", sans-serif;
+      background-color: var(--void);
+      overflow-x: hidden;
+    }
 
-        * {
-            box-sizing: border-box;
-        }
+    .site-shell {
+      width: 100%;
+      min-height: 100%;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+    }
 
-        html {
-            scroll-behavior: smooth;
-        }
+    .site-shell::before {
+      content: "";
+      position: fixed;
+      z-index: -2;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0, 255, 136, .045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 136, .045) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, black, transparent 85%);
+      pointer-events: none;
+    }
 
-        body {
-            margin: 0;
-            padding: 40px 15px;
-            font-family: Arial, sans-serif;
-            background: #0f0f0f;
-            color: white;
-            text-align: center;
-        }
+    .site-shell::after {
+      content: "";
+      position: fixed;
+      z-index: -1;
+      width: 560px;
+      height: 560px;
+      top: -250px;
+      right: -120px;
+      border-radius: 50%;
+      background: rgba(0, 255, 136, .11);
+      filter: blur(110px);
+      pointer-events: none;
+    }
 
-        .card {
-            background: #0f0f0f;
-            padding: 35px 25px;
-            border-radius: 25px;
-            max-width: 600px;
-            margin: auto;
-            border: 2px solid #00ff88;
-            box-shadow: 0 0 25px #00ff88;
-            animation: glow 2s infinite alternate;
-        }
+    .hero-card {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(0, 255, 136, .78);
+      background: linear-gradient(145deg, rgba(24, 32, 27, .96), rgba(13, 16, 14, .98));
+      box-shadow: 0 0 0 1px rgba(0, 255, 136, .1), 0 0 36px rgba(0, 255, 136, .18);
+      animation: neonPulse 3.8s ease-in-out infinite;
+    }
 
-        @keyframes glow {
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      background: linear-gradient(115deg, transparent 28%, rgba(0,255,136,.5), transparent 54%);
+      transform: translateX(120%);
+      animation: scanner 5s ease-in-out infinite;
+      pointer-events: none;
+    }
 
-            from {
-                box-shadow: 0 0 20px #00ff88;
-            }
+    @keyframes neonPulse {
+      50% { box-shadow: 0 0 0 1px rgba(0,255,136,.2), 0 0 58px rgba(0,255,136,.28); }
+    }
 
-            to {
-                box-shadow:
-                    0 0 35px #00ff88,
-                    0 0 55px #00ff88;
-            }
+    @keyframes scanner {
+      45%, 100% { transform: translateX(-120%); }
+    }
 
-        }
+    .avatar-frame {
+      width: 148px;
+      height: 148px;
+      position: relative;
+      flex: 0 0 auto;
+      border: 2px solid var(--neon);
+      border-radius: 9999px;
+      overflow: hidden;
+      background: #0a120d;
+      box-shadow: 0 0 0 6px rgba(0,255,136,.07), 0 0 28px rgba(0,255,136,.55);
+    }
 
-        img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            border: 3px solid #00ff88;
-            object-fit: cover;
-            box-shadow: 0 0 20px #00ff88;
-        }
+    .avatar-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-        h1 {
-            color: #00ff88;
-            font-size: 32px;
-            text-shadow: 0 0 10px #00ff88;
-        }
+    .avatar-fallback {
+      display: none;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      color: var(--neon);
+      font-family: "Playfair Display", serif;
+      font-size: 2.15rem;
+      font-weight: 700;
+      background: radial-gradient(circle at 30% 25%, #214532, #0c130f 70%);
+    }
 
-        h2 {
-            color: #00ff88;
-            margin-top: 35px;
-        }
+    .avatar-frame.image-failed img { display: none; }
+    .avatar-frame.image-failed .avatar-fallback { display: flex; }
 
-        .description {
-            color: #ccc;
-            font-size: 17px;
-            line-height: 1.8;
-        }
+    .skill-chip {
+      border: 1px solid rgba(0, 255, 136, .38);
+      background: rgba(0, 255, 136, .06);
+      color: #dfffee;
+      transition: transform .22s ease, background .22s ease, box-shadow .22s ease;
+    }
 
-        /* المهارات */
+    .skill-chip:hover {
+      transform: translateY(-3px);
+      background: rgba(0, 255, 136, .13);
+      box-shadow: 0 8px 22px rgba(0, 255, 136, .12);
+    }
 
-        .skills span {
-            background: #00ff88;
-            color: black;
-            padding: 9px 16px;
-            border-radius: 20px;
-            margin: 5px;
-            display: inline-block;
-            font-weight: bold;
-        }
+    .neon-button {
+      border: 1px solid var(--neon);
+      background: var(--neon);
+      color: #06130c;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
 
-        /* زر الخدمات */
+    .neon-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(0, 255, 136, .3);
+      background: #42ffab;
+    }
 
-        .services-button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 14px 35px;
-            background: transparent;
-            color: #00ff88;
-            border: 2px solid #00ff88;
-            border-radius: 12px;
-            text-decoration: none;
-            font-size: 17px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+    .social-button {
+      border: 1px solid rgba(0, 255, 136, .34);
+      background: rgba(255,255,255,.025);
+      color: var(--white);
+      transition: transform .2s ease, border-color .2s ease, background .2s ease, box-shadow .2s ease;
+    }
 
-        .services-button:hover {
-            background: #00ff88;
-            color: black;
-            box-shadow: 0 0 20px #00ff88;
-            transform: scale(1.05);
-        }
+    .social-button:hover {
+      transform: translateY(-3px);
+      border-color: var(--neon);
+      background: rgba(0, 255, 136, .09);
+      box-shadow: 0 8px 24px rgba(0, 255, 136, .12);
+    }
 
-        /* قسم الخدمات */
+    .service-card {
+      position: relative;
+      border: 1px solid rgba(0, 255, 136, .2);
+      background: linear-gradient(145deg, rgba(25, 33, 28, .88), rgba(15, 18, 16, .92));
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
 
-        #services {
-            margin-top: 80px;
-            padding-top: 30px;
-        }
+    .service-card:hover {
+      transform: translateY(-7px);
+      border-color: rgba(0, 255, 136, .85);
+      box-shadow: 0 16px 35px rgba(0, 255, 136, .12);
+    }
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
+    .service-card::after {
+      content: "";
+      width: 34px;
+      height: 2px;
+      display: block;
+      margin-top: 1.35rem;
+      background: var(--neon);
+      box-shadow: 0 0 12px var(--neon);
+    }
 
-        .service {
-            background: #111;
-            border: 2px solid #00ff88;
-            border-radius: 20px;
-            padding: 25px;
-            transition: 0.3s;
-        }
+    a:focus-visible {
+      outline: 3px solid #ffffff;
+      outline-offset: 4px;
+    }
 
-        .service:hover {
-            transform: translateY(-7px);
-            box-shadow: 0 0 20px #00ff88;
-        }
-
-        .service h3 {
-            color: #00ff88;
-        }
-
-        .service p {
-            color: #ccc;
-            line-height: 1.8;
-        }
-
-        /* التواصل */
-
-        .contact {
-            margin-top: 30px;
-        }
-
-        .contact a {
-            display: inline-block;
-      background: transparent;
-      color: #00ff88;
-      border: 2px solid #00ff88;
-      padding: 12px 20px;
-      margin: 8px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-        }
-
-        .contact a:hover {
-            background: #00ff88;
-      color: black;
-      box-shadow: 0 0 15px #00ff88;
-        }
-
-        /* زر العودة */
-
-        .back {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 12px 25px;
-            border: 2px solid #00ff88;
-            border-radius: 12px;
-            color: #00ff88;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer {
-            margin-top: 40px;
-            color: #D3D3D3;
-            font-size: 13px;
-        }
-
-    </style>
-
-</head>
-
-
-<body>
-
-    <!-- ========================= -->
-    <!-- الصفحة الرئيسية -->
-    <!-- ========================= -->
-
-    <div class="card" id="home">
-
-          <img
-            src="https://i.postimg.cc/KjFM6DZ1/IMG-20260814-WA0000.jpg"
-            alt="صورة خالد"
-        >
-
-
-
-        <h1>خالد سامح</h1>
-
-        <p class="description">
-
-            طالب بكالوريا ومطور ويب مبتدئ
-
-            <br>
-
-            أصمم صفحات ومواقع ويب بسيطة وعصرية.
-
-        </p>
-
-
-        <h2>مهاراتي التقنية</h2>
-
-        <div class="skills">
-
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-
+    @media (max-width: 640px) {
+      .avatar-frame { width: 122px; height: 122px; }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/6c2ecc939521f244.data_sdk.js" type="text/javascript" integrity="sha512-gRx8s+XsZDN6mSIQu2sivLZysbV0WHhb5kXNUWlgVb5lCMU1foJYukyMEDPv8Tnoocb8iwqB4XdRrWc7oEGzIQ=="></script>
+  <script src="/_sdk/ef0304cb8c7ed696.editing_sdk.js" type="text/javascript" integrity="sha512-kmL9L5Yuj57MQaequKbMA3aGpT/5lBUp10iGA3e3qnmMLs2ZZQ0poCcIfdd5rTgrhEvNPe4HK0ohePW7ZpgAFg=="></script>
+  <script src="/_sdk/ddcab3e45959c817.resizing_sdk.js" type="text/javascript" integrity="sha512-VAviUKfZVzugWBSeULYjSljTX+nb84wc6Zzbx5GQaQgh6X2ISSjXi8eIiCDGdwDh10esJMY0+QFQgUy9NcrTlQ=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(15, 15, 15);">
+  <div class="site-shell">
+   <header id="home" class="w-full px-5 pt-7 sm:px-8 lg:px-12">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between border-b border-emerald-400/20 pb-5" aria-label="التنقل الرئيسي"><span class="text-sm font-semibold tracking-[.18em] text-emerald-300">KS / WEB</span> <a href="#services" class="text-sm text-zinc-300 transition hover:text-emerald-300">الخدمات</a>
+    </nav>
+   </header>
+   <main class="w-full px-5 pb-12 sm:px-8 lg:px-12">
+    <section class="mx-auto flex max-w-6xl items-center justify-center py-12 sm:py-16" aria-labelledby="main-name">
+     <article data-template-id="hero-card" class="canva-card hero-card w-full max-w-4xl rounded-[2rem] p-7 sm:p-11" style="background: linear-gradient(145deg, rgba(24, 32, 27, 0.96), rgba(13, 16, 14, 0.98));">
+      <div class="relative z-10 flex flex-col items-center gap-8 text-center md:flex-row md:text-right">
+       <div class="avatar-frame" aria-label="صورة الملف الشخصي"><img data-template-id="profile-image" class="canva-image" loading="lazy" onerror="this.parentElement.classList.add('image-failed')" src="https://i.postimg.cc/KjFM6DZ1/IMG-20260814-WA0000.jpg" alt="صورة خالد">
+        <div class="avatar-fallback" aria-hidden="true">
+         خ س
         </div>
-
-
-        <!-- زر الخدمات -->
-
-        <a href="#services" class="services-button">
-            خدماتي
-        </a>
-
-
-        <h2>تواصل معي</h2>
-
-        <div class="contact">
-
-            <a
-                href="https://wa.me/201123898466"
-                target="_blank"
-            >
-                WhatsApp
-            </a>
-
-            <a
-                href="https://www.facebook.com/khald.samh.slamh"
-                target="_blank"
-            >
-                Facebook
-            </a>
-
-            <a
-                href="https://instagram.com/khldsmh580"
-                target="_blank"
-            >
-                Instagram
-            </a>
-
-        </div>
-
-    </div>
-    
-    
-    <!-- ========================= -->
-    <!-- قسم الخدمات -->
-    <!-- ========================= -->
-    
-    <section id="services">
-
-        <h2>خدماتي</h2>
-
-        <p class="description">
-            خدمات برمجية وتصميم مواقع بسيطة وعصرية
-        </p>
-
-
-        <div class="services">
-
-
-            <div class="service">
-
-                <h3>موقع شخصي</h3>
-
-                <p>
-                    تصميم صفحة شخصية تعرض
-                    معلوماتك ومهاراتك وروابط التواصل.
-                </p>
-
-            </div>
-
-
-            <div class="service">
-
-                <h3>صفحة إعلانية</h3>
-
-                <p>
-                    تصميم صفحة لعرض منتجك
-                    أو مشروعك أو خدمتك.
-                </p>
-
-            </div>
-
-
-            <div class="service">
-
-                <h3>Landing Page</h3>
-
-                <p>
-                    صفحة مخصصة للترويج
-                    لخدمة أو مشروع معين.
-                </p>
-
-            </div>
-
-
-            <div class="service">
-
-                <h3>واجهات ويب</h3>
-
-                <p>
-                    تصميم واجهات باستخدام
-                    HTML و CSS و JavaScript.
-                </p>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- العودة للأعلى -->
-
-        <a
-            href="#home"
-            class="back"
-        >
-            ↑ العودة للرئيسية
-        </a>
-
+       </div>
+       <div class="flex-1">
+        <p data-template-id="hero-eyebrow" class="canva-text mb-3 text-sm font-semibold tracking-[.14em] text-emerald-300" style="color: rgb(0, 255, 136); font-weight: 700; font-style: normal; font-size: 14px; letter-spacing: 0.12rem;">WEB DEVELOPER</p>
+        <h1 id="main-name" data-template-id="main-name" class="canva-text mb-4 font-bold leading-tight" style="color: rgb(246, 255, 249); font-weight: 700; font-style: normal; font-size: 34px;">خالد سامح</h1>
+        <p data-template-id="main-description-one" class="canva-text mb-2 text-zinc-200" style="color: rgb(228, 238, 231); font-weight: 400; font-style: normal; font-size: 18px;">طالب بكالوريا ومطور ويب مبتدئ</p>
+        <p data-template-id="main-description-two" class="canva-text max-w-xl text-zinc-400" style="color: rgb(184, 197, 189); font-weight: 400; font-style: normal; font-size: 17px;">أصمم صفحات ومواقع ويب بسيطة وعصرية.</p>
+        <section class="mt-7" aria-labelledby="skills-title">
+         <h2 id="skills-title" data-template-id="skills-title" class="canva-text mb-4 font-semibold text-emerald-200" style="color: rgb(223, 255, 238); font-weight: 700; font-style: normal; font-size: 26px;">مهاراتي التقنية</h2>
+         <div class="flex flex-wrap justify-center gap-2.5 md:justify-start"><span data-template-id="skill-html" class="canva-tag skill-chip rounded-full px-4 py-2 text-sm font-semibold" style="background: rgba(0, 255, 136, 0.06); color: rgb(223, 255, 238); font-weight: 600; font-style: normal; font-size: 14px;">HTML</span> <span data-template-id="skill-css" class="canva-tag skill-chip rounded-full px-4 py-2 text-sm font-semibold" style="background: rgba(0, 255, 136, 0.06); color: rgb(223, 255, 238); font-weight: 600; font-style: normal; font-size: 14px;">CSS</span> <span data-template-id="skill-js" class="canva-tag skill-chip rounded-full px-4 py-2 text-sm font-semibold" style="background: rgba(0, 255, 136, 0.06); color: rgb(223, 255, 238); font-weight: 600; font-style: normal; font-size: 14px;">JavaScript</span>
+         </div>
+        </section><a data-template-id="services-cta" href="#services" class="canva-button neon-button mt-8 inline-flex rounded-xl px-6 py-3 font-bold" style="background: rgb(0, 255, 136); color: rgb(6, 19, 12); font-weight: 700; font-style: normal; font-size: 17px;">خدماتي</a>
+       </div>
+      </div>
+     </article>
     </section>
-
-
-    <footer>
-
-        © خالد سامح | جميع الحقوق محفوظة 2026
-
-    </footer>
-<script defer src="/_vercel/insights/script.js"></script>
-
-
-</body>
-
-</html>
+    <section class="mx-auto max-w-4xl pb-16 text-center" aria-labelledby="contact-title">
+     <p class="mb-3 text-xs font-semibold tracking-[.2em] text-emerald-400">CONNECT / 01</p>
+     <h2 id="contact-title" data-template-id="contact-title" class="canva-text mb-7 font-bold" style="color: rgb(246, 255, 249); font-weight: 700; font-style: normal; font-size: 26px;">تواصل معي</h2>
+     <div class="flex flex-wrap justify-center gap-3"><a data-template-id="whatsapp-button" href="https://wa.me/201123898466" target="_blank" rel="noopener noreferrer" class="canva-button social-button rounded-xl px-5 py-3 font-semibold" style="background: rgba(255, 255, 255, 0.024); color: rgb(246, 255, 249); font-weight: 600; font-style: normal; font-size: 17px;">WhatsApp</a> <a data-template-id="facebook-button" href="https://www.facebook.com/khald.samh.slamh" target="_blank" rel="noopener noreferrer" class="canva-button social-button rounded-xl px-5 py-3 font-semibold" style="background: rgba(255, 255, 255, 0.024); color: rgb(246, 255, 249); font-weight: 600; font-style: normal; font-size: 17px;">Facebook</a> <a data-template-id="instagram-button" href="https://instagram.com/khldsmh580" target="_blank" rel="noopener noreferrer" class="canva-button social-button rounded-xl px-5 py-3 font-semibold" style="background: rgba(255, 255, 255, 0.024); color: rgb(246, 255, 249); font-weight: 600; font-style: normal; font-size: 17px;">Instagram</a>
+     </div>
+    </section>
+    <section id="services" class="mx-auto max-w-6xl scroll-mt-8 py-7 sm:py-12" aria-labelledby="services-title">
+     <div class="mb-10 text-center">
+      <p class="mb-3 text-xs font-semibold tracking-[.2em] text-emerald-400">SERVICES / 02</p>
+      <h2 id="services-title" data-template-id="services-title" class="canva-text mb-3 font-bold" style="color: rgb(246, 255, 249); font-weight: 700; font-style: normal; font-size: 26px;">خدماتي</h2>
+      <p data-template-id="services-description" class="canva-text mx-auto max-w-2xl text-zinc-400" style="color: rgb(184, 197, 189); font-weight: 400; font-style: normal; font-size: 17px;">خدمات برمجية وتصميم مواقع بسيطة وعصرية</p>
+     </div>
+     <div class="grid gap-5 sm:grid-cols-2">
+      <article data-template-id="service-personal-card" class="canva-card service-card rounded-2xl p-6" style="background: linear-gradient(145deg, rgba(25, 33, 28, 0.88), rgba(15, 18, 16, 0.92));"><span class="mb-5 block text-sm font-bold text-emerald-400">01</span>
+       <h3 data-template-id="service-personal-title" class="canva-text mb-3 font-bold text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 20px;">موقع شخصي</h3>
+       <p data-template-id="service-personal-text" class="canva-text leading-7 text-zinc-400" style="color: rgb(184, 197, 189); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">تصميم صفحة شخصية تعرض معلوماتك ومهاراتك وروابط التواصل.</p>
+      </article>
+      <article data-template-id="service-ad-card" class="canva-card service-card rounded-2xl p-6" style="background: linear-gradient(145deg, rgba(25, 33, 28, 0.88), rgba(15, 18, 16, 0.92));"><span class="mb-5 block text-sm font-bold text-emerald-400">02</span>
+       <h3 data-template-id="service-ad-title" class="canva-text mb-3 font-bold text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 20px;">صفحة إعلانية</h3>
+       <p data-template-id="service-ad-text" class="canva-text leading-7 text-zinc-400" style="color: rgb(184, 197, 189); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">تصميم صفحة لعرض منتجك أو مشروعك أو خدمتك.</p>
+      </article>
+      <article data-template-id="service-landing-card" class="canva-card service-card rounded-2xl p-6" style="background: linear-gradient(145deg, rgba(25, 33, 28, 0.88), rgba(15, 18, 16, 0.92));"><span class="mb-5 block text-sm font-bold text-emerald-400">03</span>
+       <h3 data-template-id="service-landing-title" class="canva-text mb-3 font-bold text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 20px;">Landing Page</h3>
+       <p data-template-id="service-landing-text" class="canva-text leading-7 text-zinc-400" style="color: rgb(184, 197, 189); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">صفحة مخصصة للترويج لخدمة أو مشروع معين.</p>
+      </article>
+      <article data-template-id="service-ui-card" class="canva-card service-card rounded-2xl p-6" style="background: linear-gradient(145deg, rgba(25, 33, 28, 0.88), rgba(15, 18, 16, 0.92));"><span class="mb-5 block text-sm font-bold text-emerald-400">04</span>
+       <h3 data-template-id="service-ui-title" class="canva-text mb-3 font-bold text-white" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 20px;">واجهات ويب</h3>
+       <p data-template-id="service-ui-text" class="canva-text leading-7 text-zinc-400" style="color: rgb(184, 197, 189); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">تصميم واجهات باستخدام HTML و CSS و JavaScript.</p>
+      </article>
+     </div>
+     <div class="mt-11 text-center"><a data-template-id="back-home-button" href="#home" class="canva-button social-button inline-flex rounded-xl px-6 py-3 font-semibold" style="background: rgba(255, 255, 255, 0.024); color: rgb(246, 255, 249); font-weight: 600; font-style: normal; font-size: 17px;">↑ العودة للرئيسية</a>
+     </div>
+    </section>
+   </main>
+   <footer class="w-full border-t border-emerald-400/15 px-5 py-7 text-center sm:px-8">
+    <p data-template-id="footer-text" class="canva-text text-sm text-zinc-500" style="color: rgb(161, 170, 164); font-weight: 400; font-style: normal; font-size: 14px;">© خالد سامح | جميع الحقوق محفوظة 2026</p>
+   </footer>
+  </div>
+ 
+</body></html>
